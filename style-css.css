@@ -1,0 +1,19 @@
+/* Custom styles for BOM Manager */
+
+.table-responsive {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+}

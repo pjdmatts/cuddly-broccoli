@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add BOM Item</h2>
+
+<div class="card">
+    <div class="card-body">
+        <form action="{{ url_for('add_item') }}" method="post">
+            <div class="mb-3">
+                <label for="design_title" class="form-label">Design Title</label>
+                <input type="text" name="design_title" id="design_title" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea name="description" id="description" class="form-control" rows="3"></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label for="type" class="form-label">Type</label>
+                <input type="text" name="type" id="type" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label for="designator" class="form-label">Designator</label>
+                <input type="text" name="designator" id="designator" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label for="qty" class="form-label">Quantity</label>
+                <input type="number" name="qty" id="qty" class="form-control" min="0" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="manufacturer" class="form-label">Manufacturer</label>
+                <input type="text" name="manufacturer" id="manufacturer" class="form-control">
+            </div>
+            
+            <div class="mb-3">
+                <label for="part_number" class="form-label">Part Number</label>
+                <input type="text" name="part_number" id="part_number" class="form-control">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Add Item</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
